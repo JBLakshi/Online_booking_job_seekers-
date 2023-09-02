@@ -1,0 +1,14 @@
+body{
+    
+    background-image: url('../images/logos/loginbg.jpg');
+    background-size: cover;
+        /* options: auto, cover, contain, etc. */
+        background-position: center center;
+        /* options: x y (e.g., 50% 50%) */
+        background-repeat: no-repeat;
+
+}
+
+.hidden{
+    display: none;
+}
