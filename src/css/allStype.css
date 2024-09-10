@@ -1,0 +1,569 @@
+/* Styles card view */
+.staff-card {
+  width: 230px;
+  border-radius: 20px;
+  background: #1b233d;
+  padding: 5px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.staff-card:hover {
+  transform: scale(1.05);
+}
+
+/* medical section - START*/
+.staff-card .medical-section {
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/medical-sector.jpg');
+  background-position: center center;
+  background-size: cover;
+  /* background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%); */
+  position: relative;
+}
+
+.staff-card .medical-section .border {
+  border-bottom-right-radius: 10px;
+  height: 30px;
+  width: 130px;
+  background: white;
+  background: #1b233d;
+  position: relative;
+  transform: skew(-40deg);
+  box-shadow: -10px -10px 0 0 #1b233d;
+}
+
+.staff-card .medical-section .border::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: -15px;
+  background: rgba(255, 255, 255, 0);
+  border-top-left-radius: 10px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.staff-card .medical-section::before {
+  content: "";
+  position: absolute;
+  /* top: 30px; */
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.staff-card .medical-section .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.staff-card .medical-section .icons .logo {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 7px 0 7px 15px;
+}
+
+.staff-card .medical-section .icons .logo .medical-section {
+  height: 100%;
+}
+/* medical section - END*/
+
+/* electric section - START*/
+.staff-card .electric-section {
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/electric-selctor.jpg');
+  background-position: center center;
+  background-size: cover;
+  /* background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%); */
+  position: relative;
+}
+
+.staff-card .electric-section .border {
+  border-bottom-right-radius: 10px;
+  height: 30px;
+  width: 130px;
+  background: white;
+  background: #1b233d;
+  position: relative;
+  transform: skew(-40deg);
+  box-shadow: -10px -10px 0 0 #1b233d;
+}
+
+.staff-card .electric-section .border::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: -15px;
+  background: rgba(255, 255, 255, 0);
+  border-top-left-radius: 10px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.staff-card .electric-section::before {
+  content: "";
+  position: absolute;
+  /* top: 30px; */
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.staff-card .electric-section .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.staff-card .electric-section .icons .logo {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 7px 0 7px 15px;
+}
+
+.staff-card .electric-section .icons .logo .electric-section {
+  height: 100%;
+}
+/* electric section - END*/
+
+/* hardware section - START*/
+.staff-card .hardware-section {
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/hardware-selctor.jpeg');
+  background-position: center center;
+  background-size: cover;
+  /* background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%); */
+  position: relative;
+}
+
+.staff-card .hardware-section .border {
+  border-bottom-right-radius: 10px;
+  height: 30px;
+  width: 130px;
+  background: white;
+  background: #1b233d;
+  position: relative;
+  transform: skew(-40deg);
+  box-shadow: -10px -10px 0 0 #1b233d;
+}
+
+.staff-card .hardware-section .border::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: -15px;
+  background: rgba(255, 255, 255, 0);
+  border-top-left-radius: 10px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.staff-card .hardware-section::before {
+  content: "";
+  position: absolute;
+  /* top: 30px; */
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.staff-card .hardware-section .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.staff-card .hardware-section .icons .logo {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 7px 0 7px 15px;
+}
+
+.staff-card .hardware-section .icons .logo .hardware-section {
+  height: 100%;
+}
+/* hardware section - END*/
+
+/* textile section - START*/
+.staff-card .textile-section {
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/textile-sector.jpg');
+  background-position: center center;
+  background-size: cover;
+  /* background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%); */
+  position: relative;
+}
+
+.staff-card .textile-section .border {
+  border-bottom-right-radius: 10px;
+  height: 30px;
+  width: 130px;
+  background: white;
+  background: #1b233d;
+  position: relative;
+  transform: skew(-40deg);
+  box-shadow: -10px -10px 0 0 #1b233d;
+}
+
+.staff-card .textile-section .border::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: -15px;
+  background: rgba(255, 255, 255, 0);
+  border-top-left-radius: 10px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.staff-card .textile-section::before {
+  content: "";
+  position: absolute;
+  /* top: 30px; */
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.staff-card .textile-section .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.staff-card .textile-section .icons .logo {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 7px 0 7px 15px;
+}
+
+.staff-card .textile-section .icons .logo .textile-section {
+  height: 100%;
+}
+/* textile section - END*/
+
+/* restaurant section - START*/
+.staff-card .restaurant-section {
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/restaurant-sector.jpg');
+  background-position: center center;
+  background-size: cover;
+  /* background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%); */
+  position: relative;
+}
+
+.staff-card .restaurant-section .border {
+  border-bottom-right-radius: 10px;
+  height: 30px;
+  width: 130px;
+  background: white;
+  background: #1b233d;
+  position: relative;
+  transform: skew(-40deg);
+  box-shadow: -10px -10px 0 0 #1b233d;
+}
+
+.staff-card .restaurant-section .border::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: -15px;
+  background: rgba(255, 255, 255, 0);
+  border-top-left-radius: 10px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.staff-card .restaurant-section::before {
+  content: "";
+  position: absolute;
+  /* top: 30px; */
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.staff-card .restaurant-section .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.staff-card .restaurant-section .icons .logo {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 7px 0 7px 15px;
+}
+
+.staff-card .restaurant-section .icons .logo .restaurant-section {
+  height: 100%;
+}
+/* restaurant section - END*/
+
+/* grocery section - START*/
+.staff-card .grocery-section {
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/grocery-sector.jpg');
+  background-position: center center;
+  background-size: cover;
+  /* background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%); */
+  position: relative;
+}
+
+.staff-card .grocery-section .border {
+  border-bottom-right-radius: 10px;
+  height: 30px;
+  width: 130px;
+  background: white;
+  background: #1b233d;
+  position: relative;
+  transform: skew(-40deg);
+  box-shadow: -10px -10px 0 0 #1b233d;
+}
+
+.staff-card .grocery-section .border::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: -15px;
+  background: rgba(255, 255, 255, 0);
+  border-top-left-radius: 10px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.staff-card .grocery-section::before {
+  content: "";
+  position: absolute;
+  /* top: 30px; */
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.staff-card .grocery-section .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.staff-card .grocery-section .icons .logo {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 7px 0 7px 15px;
+}
+
+.staff-card .grocery-section .icons .logo .grocery-section {
+  height: 100%;
+}
+/* grocery section - END*/
+
+.staff-card .bottom-section {
+  margin-top: 15px;
+  padding: 10px 5px;
+}
+
+.staff-card .bottom-section .title {
+  display: block;
+  font-size: 17px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.staff-card .bottom-section .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.staff-card .bottom-section .row .item {
+  flex: 30%;
+  text-align: center;
+  padding: 5px;
+  color: rgba(170, 222, 243, 0.721);
+}
+
+.staff-card .bottom-section .row .item .big-text {
+  font-size: 12px;
+  display: block;
+}
+
+.staff-card .bottom-section .row .item .regular-text {
+  font-size: 9px;
+}
+
+.staff-card  .bottom-section .row .item:nth-child(2) {
+  border-left: 1px solid rgba(255, 255, 255, 0.126);
+  border-right: 1px solid rgba(255, 255, 255, 0.126);
+}
+
+/* staff card url design */
+.staff-card-design {
+  text-decoration: none;
+}
+
+.staff-card-design:hover, .staff-card-design:focus {
+  text-decoration: none;
+}
+
+
+/* sub cards */
+.sub-card {
+  width: 190px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 254px;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom right, #0b0352, #086366);
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+ }
+ 
+ .sub-card-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+ 
+ .sub-card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+ }
+ 
+ .sub-text-body {
+  color: rgb(134, 134, 134);
+ }
+ 
+ /*Text*/
+ .sub-text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50%;
+  color: rgb(252, 251, 251);
+  text-transform: uppercase;
+
+ }
+ 
+ /*Hover*/
+ .sub-card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+ }
+ 
+ .sub-card:hover .sub-card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+ }
+
+ .color-design{
+  color: #0863a8;
+ }
+
+ .note-color{
+  color: #ff0612;
+ }
+
+ .table-alignment td{
+  border: 1px solid rgb(226, 222, 222);
+  border-color: #0b0352;
+}
+
+.profile-picture{
+  width: 200px;
+  height: 200px;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.upload-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,62 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Job Seeker</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../css/dashboard.css" /> -->
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Job Seekers</title>
-  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
-  <link rel="stylesheet" href="../assets/css/styles.min.css" />
-      <link rel="stylesheet" href="../assets/css/login.css" />
-</head>
+    <!-- Boostrap CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../source/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../source/bootstrap/css/bootstrap.css"
+    />
 
-<body>
-  <!--  Body Wrapper -->
-  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-    data-sidebar-position="fixed" data-header-position="fixed">
-    <div
-      class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
-      <div class="d-flex align-items-center justify-content-center w-100">
-        <div class="row justify-content-center w-100">
-          <div class="col-md-8 col-lg-6 col-xxl-3">
-            <div class="card mb-0">
-              <div class="card-body">
-                <img src="../assets/images/logos/favicon" width="180" alt="">
-                </a>
-                <p class="text-center">Your Jobe opportunity</p>
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Username</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-4">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between mb-4">
-                    <div class="form-check">
-                      <input class="form-check-input primary" type="checkbox" value="" id="flexCheckChecked" checked>
-                      <label class="form-check-label text-dark" for="flexCheckChecked">
-                        Remeber this Device
-                      </label>
-                    </div>
-                    <a class="text-primary fw-bold" href="./index.html">Forgot Password ?</a>
-                  </div>
-                  <a href="./index.html" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Sign In</a>
-                  <div class="d-flex align-items-center justify-content-center">
-                    <p class="fs-4 mb-0 fw-bold">New to Join?</p>
-                    <a class="text-primary fw-bold ms-2" href="./register.html">Create an account</a>
-                  </div>
-                </form>
-              </div>
-            </div>
+    <!-- Telephone Select CSS -->
+    <link
+      href="../source/telephone-select/css/intlTelInput.css"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../source/fontawesome/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- signup and login Page -START -->
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+
+          <input
+            type="text"
+            placeholder="First Name"
+            name="txtFirstName"
+            id="registerName"
+            class="form-control mt-2"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            name="txtLastName"
+            id="text-style"
+            class="form-control mt-2"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            name="txtEmail"
+            id="text-style"
+            class="form-control mt-2"
+            required
+          />
+          <input
+            type="text"
+            name="txtPhone"
+            placeholder="phone number"
+            id="text-style"
+            class="form-control mt-2"
+            required
+          />
+
+          <input
+            type="password"
+            placeholder="Password"
+            name="txtPassword"
+            id="text-style"
+            class="form-control mt-2"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            id="text-style"
+            name="txtConfirmPassword"
+            class="form-control mt-2"
+            required
+          />
+          <button
+            class="mt-3"
+            type="submit"
+            name="btnCreateStaff"
+            id="btnRegister"
+          >
+            Sign Up
+          </button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign in</h1>
+          <input
+            type="email"
+            placeholder="Email"
+            name="txtLoginEmail"
+            id="text-style"
+            class="form-control mt-2"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            id="text-style"
+            name="txtLoginPassword"
+            class="form-control mt-2"
+          />
+            <button type="submit" name="btnLogin" class="mt-3" onclick="redirectToIndex()">Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Job Seeker</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+    <!-- signup and login Page -END -->
+
+    <script>
+      setTimeout(function () {
+        var errorMessage = document.getElementById("error-message");
+        if (errorMessage) {
+          errorMessage.style.display = "none";
+        }
+      }, 5000);
+    </script>
+
+    <script>
+      function redirectToIndex() {
+          window.location.href = "index.html"; 
+      }
+  </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- javascript function load -->
+    <script src="../js/custom.js"></script>
+
+    <!-- Telephone Select JS -->
+    <script src="../source/telephone-select/js/intlTelInput.js"></script>
+
+    <!-- boostrap JS -->
+    <script src="../source/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../source/bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
 </html>
